@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="CSS/emsstylesheet.css">
+<title>Update</title>
+</head>
+<body>
+<form action="update" method="post">
+<h1>Update Employee</h1>
+	Employee ID (non-negative int up to 5 digits): <input name="empId" type="text" pattern="0|[1-9]\d{0,4}" required>
+	<br><br>
+	Field: <select name="field">
+		<option value="0">Name</option>
+		<option value="1">Age</option>
+		<option value="2">Gender</option>
+		<option value="3">Phone number</option>
+		<option value="4">Address</option>
+		<option value="5">ID</option>
+		<option value="6">SSN</option>
+		<option value="7">Email</option>
+		<option value="8">Job title</option>
+		<option value="9">Department</option>
+		<option value="10">Salary</option>
+		<option value="11">Manager ID</option>
+		<option value="12">Is manager?</option>
+	</select>
+	<br><br>
+	New value: <input type="text" name="newVal" required>
+	<br><br><br>
+	<input type="submit" value="Submit">
+</form>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="CSS/emsstylesheet.css">
+<title>Create</title>
+</head>
+<body>
+<div class="container-fluid">
+	<form method="post" action="create" class="container-fluid">
+	<h1>Create Employee</h1><br><br>
+		Full name:<br><input type="text" name="name" required><br><br>
+		Age (10-99):<br><input type="text" name="age" pattern="0|[1-9]\d{1,1}" required><br><br>
+		Gender:<br>
+		<input type="radio" name="gender" value="0" checked> Male<br>
+		<input type="radio" name="gender" value="1"> Female<br>
+		<input type="radio" name="gender" value="2"> Other<br><br>
+		Phone number (1112345678):<br><input type="text" name="contactNo" pattern="^[0-9]{10}" required><br><br>
+		Address:<br>
+		Street Address:<br><input name="street" required><br>
+		City/Town:<br><input name="town" required><br>
+		State:<br><input name="state" required><br>
+		Zip code (non-negative and exactly 5 digits):<br><input name="zip" type="text" pattern="^[0-9]{5}" required><br><br>
+		Employee ID (non-negative int less than 100000):<br><input name="empId" type="text" pattern="0|[1-9]\d{0,4}" required><br><br>
+		Social security number (non-negative and 9 digits):<br><input name="ssn" type="text" pattern="^[0-9]{9}" required><br><br>
+		Email:<br><input name="email" type="text" pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" required><br><br>
+		Job title:<br><input name="jobTitle"><br><br>
+		Department:<br>
+		<input type="radio" name="department" value="0" checked> Development<br>
+		<input type="radio" name="department" value="1"> HR<br>
+		<input type="radio" name="department" value="2"> Sales<br><br>
+		Salary (0-99999999.99):<br><input name="salary" type="text" pattern="^[0-9]+(\.[0-9]{1,2})?$" required><br><br>
+		Manager ID (non-negative int up to 5 digits // temporary value 0):<br><input name="reportTo" type="text" pattern="0|[1-9]\d{4,4}" required><br><br>
+		Manager?<br>
+		<input type="radio" name="isManager" value="0"> Yes<br>
+		<input type="radio" name="isManager" value="1" checked> No<br><br><br><br>
+		<input type="submit" value="Submit">
+	</form>
+	</div>
+</body>
+</html>

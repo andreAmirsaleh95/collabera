@@ -1,0 +1,13 @@
+body {
+	background-color: #1C2E3B;
+	color: white;
+}
+
+.container-fluid {
+	padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+a {
+	color: cyan;
+}
