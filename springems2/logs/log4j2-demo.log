@@ -1,0 +1,531 @@
+2019-03-27 14:28:19.032  INFO Andres-MacBook-Pro.local
+			--- [           main] c.c.j.SpringemsApplication               : Starting SpringemsApplication on Andres-MacBook-Pro.local with PID 97487 (/Users/amirsa/Documents/workspace-spring-tool-suite-4-4.1.1.RELEASE/springems2/target/classes started by amirsa in /Users/amirsa/Documents/workspace-spring-tool-suite-4-4.1.1.RELEASE/springems2)
+2019-03-27 14:28:19.041  INFO Andres-MacBook-Pro.local
+			--- [           main] c.c.j.SpringemsApplication               : No active profile set, falling back to default profiles: default
+2019-03-27 14:28:19.844  INFO Andres-MacBook-Pro.local
+			--- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-27 14:28:19.895  INFO Andres-MacBook-Pro.local
+			--- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46ms. Found 1 repository interfaces.
+2019-03-27 14:28:20.250  INFO Andres-MacBook-Pro.local
+			--- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9bf7ffa8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-27 14:28:20.551  INFO Andres-MacBook-Pro.local
+			--- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2019-03-27 14:28:20.566  INFO Andres-MacBook-Pro.local
+			--- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2019-03-27 14:28:20.592  INFO Andres-MacBook-Pro.local
+			--- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2019-03-27 14:28:20.593  INFO Andres-MacBook-Pro.local
+			--- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-03-27 14:28:20.603  INFO Andres-MacBook-Pro.local
+			--- [           main] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/amirsa/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-03-27 14:28:20.692  INFO Andres-MacBook-Pro.local
+			--- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2019-03-27 14:28:20.692 DEBUG Andres-MacBook-Pro.local
+			--- [           main] o.s.w.c.ContextLoader                    : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-03-27 14:28:20.693  INFO Andres-MacBook-Pro.local
+			--- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1606 ms
+2019-03-27 14:28:20.846  INFO Andres-MacBook-Pro.local
+			--- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2019-03-27 14:28:20.939  INFO Andres-MacBook-Pro.local
+			--- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2019-03-27 14:28:20.985  INFO Andres-MacBook-Pro.local
+			--- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-03-27 14:28:21.035  INFO Andres-MacBook-Pro.local
+			--- [           main] o.h.Version                              : HHH000412: Hibernate Core {5.3.7.Final}
+2019-03-27 14:28:21.036  INFO Andres-MacBook-Pro.local
+			--- [           main] o.h.c.Environment                        : HHH000206: hibernate.properties not found
+2019-03-27 14:28:21.135  INFO Andres-MacBook-Pro.local
+			--- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-03-27 14:28:21.237  INFO Andres-MacBook-Pro.local
+			--- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-03-27 14:28:21.825  INFO Andres-MacBook-Pro.local
+			--- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-03-27 14:28:22.388  WARN Andres-MacBook-Pro.local
+			--- [           main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-03-27 14:28:22.433 TRACE Andres-MacBook-Pro.local
+			--- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	c.c.j.c.EmsController:
+	{GET /employee, produces [application/json]}: getEmployee(int)
+	{POST /employee, consumes [application/json]}: createEmployee(Employee)
+	{DELETE /employee}: deleteEmployee(int)
+	{PUT /employee, consumes [application/json]}: updateEmployee(int,Employee)
+	{GET /employees, produces [application/json]}: getAllEmployees()
+	{GET /employees/name/{name}, produces [application/json]}: getEmployeesByName(String)
+	{GET /employees/gender/{gender}, produces [application/json]}: getEmployeesByGender(Gender)
+	{GET /employees/contactno/{contactNo}, produces [application/json]}: getEmployeesByContactNo(String)
+	{GET /employees/email/{email}, produces [application/json]}: getEmployeesByEmail(String)
+	{GET /employees/ssn/{ssn}, produces [application/json]}: getEmployeesBySsn(String)
+	{GET /employees/jobtitle/{jobTitle}, produces [application/json]}: getEmployeesByJobTitle(String)
+	{GET /employees/department/{department}, produces [application/json]}: getEmployeesByDepartment(Department)
+	{GET /employees/salary/{salary}, produces [application/json]}: getEmployeesBySalary(double)
+	{GET /employees/reportsto/{reportsTo}, produces [application/json]}: getEmployeesByReportsTo(int)
+	{GET /employees/ismanager/{isManager}, produces [application/json]}: getEmployeesByIsManager(boolean)
+2019-03-27 14:28:22.442 TRACE Andres-MacBook-Pro.local
+			--- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	s.d.s.w.ApiResourceController:
+	{ /swagger-resources/configuration/security}: securityConfiguration()
+	{ /swagger-resources/configuration/ui}: uiConfiguration()
+	{ /swagger-resources}: swaggerResources()
+2019-03-27 14:28:22.445 TRACE Andres-MacBook-Pro.local
+			--- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ /error}: error(HttpServletRequest)
+	{ /error, produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2019-03-27 14:28:22.451 DEBUG Andres-MacBook-Pro.local
+			--- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 20 mappings in 'requestMappingHandlerMapping'
+2019-03-27 14:28:22.523  INFO Andres-MacBook-Pro.local
+			--- [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-03-27 14:28:22.571 TRACE Andres-MacBook-Pro.local
+			--- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped [/**/favicon.ico] onto ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []]
+2019-03-27 14:28:22.572 DEBUG Andres-MacBook-Pro.local
+			--- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-03-27 14:28:22.661  INFO Andres-MacBook-Pro.local
+			--- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-27 14:28:22.679 DEBUG Andres-MacBook-Pro.local
+			--- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-03-27 14:28:22.700 DEBUG Andres-MacBook-Pro.local
+			--- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Detected 0 mappings in 'beanNameHandlerMapping'
+2019-03-27 14:28:22.705 TRACE Andres-MacBook-Pro.local
+			--- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped [/webjars/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2019-03-27 14:28:22.705 TRACE Andres-MacBook-Pro.local
+			--- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped [/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-03-27 14:28:22.705 DEBUG Andres-MacBook-Pro.local
+			--- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-03-27 14:28:22.715 DEBUG Andres-MacBook-Pro.local
+			--- [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-03-27 14:28:22.827  INFO Andres-MacBook-Pro.local
+			--- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-03-27 14:28:22.839  INFO Andres-MacBook-Pro.local
+			--- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-03-27 14:28:22.872  INFO Andres-MacBook-Pro.local
+			--- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-03-27 14:28:23.018  INFO Andres-MacBook-Pro.local
+			--- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2019-03-27 14:28:23.037  INFO Andres-MacBook-Pro.local
+			--- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2019-03-27 14:28:23.040  INFO Andres-MacBook-Pro.local
+			--- [           main] c.c.j.SpringemsApplication               : Started SpringemsApplication in 4.247 seconds (JVM running for 5.277)
+2019-03-27 14:28:50.644  INFO Andres-MacBook-Pro.local
+			--- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-03-27 14:28:50.644  INFO Andres-MacBook-Pro.local
+			--- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2019-03-27 14:28:50.644 TRACE Andres-MacBook-Pro.local
+			--- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Detected org.springframework.web.multipart.support.StandardServletMultipartResolver@39179470
+2019-03-27 14:28:50.646 TRACE Andres-MacBook-Pro.local
+			--- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : No LocaleResolver 'localeResolver': using default [AcceptHeaderLocaleResolver]
+2019-03-27 14:28:50.647 TRACE Andres-MacBook-Pro.local
+			--- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : No ThemeResolver 'themeResolver': using default [FixedThemeResolver]
+2019-03-27 14:28:50.649 TRACE Andres-MacBook-Pro.local
+			--- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : No RequestToViewNameTranslator 'viewNameTranslator': using default [DefaultRequestToViewNameTranslator]
+2019-03-27 14:28:50.653 TRACE Andres-MacBook-Pro.local
+			--- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : No FlashMapManager 'flashMapManager': using default [SessionFlashMapManager]
+2019-03-27 14:28:50.653 DEBUG Andres-MacBook-Pro.local
+			--- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2019-03-27 14:28:50.653  INFO Andres-MacBook-Pro.local
+			--- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 9 ms
+2019-03-27 14:28:50.659 TRACE Andres-MacBook-Pro.local
+			--- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : GET "/employee?id=200", parameters={masked}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2019-03-27 14:28:50.664 TRACE Andres-MacBook-Pro.local
+			--- [nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<?> com.collabera.jump.controller.EmsController.getEmployee(int)
+2019-03-27 14:28:50.676 TRACE Andres-MacBook-Pro.local
+			--- [nio-8080-exec-1] .w.s.m.m.a.ServletInvocableHandlerMethod : Arguments: [200]
+2019-03-27 14:28:50.723 DEBUG Andres-MacBook-Pro.local
+			--- [nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json]
+2019-03-27 14:28:50.724 TRACE Andres-MacBook-Pro.local
+			--- [nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Employee does not exist."]
+2019-03-27 14:28:50.729 TRACE Andres-MacBook-Pro.local
+			--- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : No view rendering, null ModelAndView returned.
+2019-03-27 14:28:50.730 DEBUG Andres-MacBook-Pro.local
+			--- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed 409 CONFLICT, headers={masked}
+2019-03-27 14:29:22.015 TRACE Andres-MacBook-Pro.local
+			--- [nio-8080-exec-3] o.s.w.s.DispatcherServlet                : DELETE "/employee?id=200", parameters={masked}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2019-03-27 14:29:22.016 TRACE Andres-MacBook-Pro.local
+			--- [nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<?> com.collabera.jump.controller.EmsController.deleteEmployee(int)
+2019-03-27 14:29:22.016 TRACE Andres-MacBook-Pro.local
+			--- [nio-8080-exec-3] .w.s.m.m.a.ServletInvocableHandlerMethod : Arguments: [200]
+2019-03-27 14:29:22.027 DEBUG Andres-MacBook-Pro.local
+			--- [nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler public final org.springframework.http.ResponseEntity<com.collabera.jump.exception.ExceptionResponse> com.collabera.jump.controller.EmsExceptionHandler.handle(java.lang.RuntimeException)
+2019-03-27 14:29:22.027 TRACE Andres-MacBook-Pro.local
+			--- [nio-8080-exec-3] .w.s.m.m.a.ServletInvocableHandlerMethod : Arguments: [org.springframework.dao.EmptyResultDataAccessException: No class com.collabera.jump.model.Employee entity with id 200 exists!]
+2019-03-27 14:29:22.045 DEBUG Andres-MacBook-Pro.local
+			--- [nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-03-27 14:29:22.046 TRACE Andres-MacBook-Pro.local
+			--- [nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.collabera.jump.exception.ExceptionResponse@380236a0]
+2019-03-27 14:29:22.070 DEBUG Andres-MacBook-Pro.local
+			--- [nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.EmptyResultDataAccessException: No class com.collabera.jump.model.Employee entity with id 200 exists!]
+2019-03-27 14:29:22.070 TRACE Andres-MacBook-Pro.local
+			--- [nio-8080-exec-3] o.s.w.s.DispatcherServlet                : No view rendering, null ModelAndView returned.
+2019-03-27 14:29:22.072 DEBUG Andres-MacBook-Pro.local
+			--- [nio-8080-exec-3] o.s.w.s.DispatcherServlet                : Completed 400 BAD_REQUEST, headers={masked}
+2019-03-27 14:31:05.581  INFO Andres-MacBook-Pro.local
+			--- [n(16)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-03-27 14:31:05.583  INFO Andres-MacBook-Pro.local
+			--- [n(16)-127.0.0.1] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-03-27 14:31:05.586  INFO Andres-MacBook-Pro.local
+			--- [n(16)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-03-27 14:31:05.588  INFO Andres-MacBook-Pro.local
+			--- [n(16)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2019-03-27 14:31:05.594  INFO Andres-MacBook-Pro.local
+			--- [n(16)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2019-03-27 14:31:13.101  INFO Andres-MacBook-Pro.local
+			--- [           main] c.c.j.SpringemsApplication               : Starting SpringemsApplication on Andres-MacBook-Pro.local with PID 98017 (/Users/amirsa/Documents/workspace-spring-tool-suite-4-4.1.1.RELEASE/springems2/target/classes started by amirsa in /Users/amirsa/Documents/workspace-spring-tool-suite-4-4.1.1.RELEASE/springems2)
+2019-03-27 14:31:13.107  INFO Andres-MacBook-Pro.local
+			--- [           main] c.c.j.SpringemsApplication               : No active profile set, falling back to default profiles: default
+2019-03-27 14:31:14.009  INFO Andres-MacBook-Pro.local
+			--- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-27 14:31:14.067  INFO Andres-MacBook-Pro.local
+			--- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53ms. Found 1 repository interfaces.
+2019-03-27 14:31:14.414  INFO Andres-MacBook-Pro.local
+			--- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f28a23dc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-27 14:31:14.693  INFO Andres-MacBook-Pro.local
+			--- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2019-03-27 14:31:14.705  INFO Andres-MacBook-Pro.local
+			--- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2019-03-27 14:31:14.715  INFO Andres-MacBook-Pro.local
+			--- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2019-03-27 14:31:14.716  INFO Andres-MacBook-Pro.local
+			--- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-03-27 14:31:14.722  INFO Andres-MacBook-Pro.local
+			--- [           main] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/amirsa/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-03-27 14:31:14.816  INFO Andres-MacBook-Pro.local
+			--- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2019-03-27 14:31:14.817 DEBUG Andres-MacBook-Pro.local
+			--- [           main] o.s.w.c.ContextLoader                    : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-03-27 14:31:14.817  INFO Andres-MacBook-Pro.local
+			--- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1662 ms
+2019-03-27 14:31:14.984  INFO Andres-MacBook-Pro.local
+			--- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2019-03-27 14:31:15.097  INFO Andres-MacBook-Pro.local
+			--- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2019-03-27 14:31:15.148  INFO Andres-MacBook-Pro.local
+			--- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-03-27 14:31:15.214  INFO Andres-MacBook-Pro.local
+			--- [           main] o.h.Version                              : HHH000412: Hibernate Core {5.3.7.Final}
+2019-03-27 14:31:15.215  INFO Andres-MacBook-Pro.local
+			--- [           main] o.h.c.Environment                        : HHH000206: hibernate.properties not found
+2019-03-27 14:31:15.331  INFO Andres-MacBook-Pro.local
+			--- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-03-27 14:31:15.471  INFO Andres-MacBook-Pro.local
+			--- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-03-27 14:31:16.234  INFO Andres-MacBook-Pro.local
+			--- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-03-27 14:31:16.844  WARN Andres-MacBook-Pro.local
+			--- [           main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-03-27 14:31:16.887 TRACE Andres-MacBook-Pro.local
+			--- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	c.c.j.c.EmsController:
+	{GET /employee, produces [application/json]}: getEmployee(int)
+	{POST /employee, consumes [application/json]}: createEmployee(Employee)
+	{DELETE /employee}: deleteEmployee(int)
+	{PUT /employee, consumes [application/json]}: updateEmployee(int,Employee)
+	{GET /employees, produces [application/json]}: getAllEmployees()
+	{GET /employees/name/{name}, produces [application/json]}: getEmployeesByName(String)
+	{GET /employees/gender/{gender}, produces [application/json]}: getEmployeesByGender(Gender)
+	{GET /employees/contactno/{contactNo}, produces [application/json]}: getEmployeesByContactNo(String)
+	{GET /employees/email/{email}, produces [application/json]}: getEmployeesByEmail(String)
+	{GET /employees/ssn/{ssn}, produces [application/json]}: getEmployeesBySsn(String)
+	{GET /employees/jobtitle/{jobTitle}, produces [application/json]}: getEmployeesByJobTitle(String)
+	{GET /employees/department/{department}, produces [application/json]}: getEmployeesByDepartment(Department)
+	{GET /employees/salary/{salary}, produces [application/json]}: getEmployeesBySalary(double)
+	{GET /employees/reportsto/{reportsTo}, produces [application/json]}: getEmployeesByReportsTo(int)
+	{GET /employees/ismanager/{isManager}, produces [application/json]}: getEmployeesByIsManager(boolean)
+2019-03-27 14:31:16.894 TRACE Andres-MacBook-Pro.local
+			--- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	s.d.s.w.ApiResourceController:
+	{ /swagger-resources/configuration/security}: securityConfiguration()
+	{ /swagger-resources/configuration/ui}: uiConfiguration()
+	{ /swagger-resources}: swaggerResources()
+2019-03-27 14:31:16.898 TRACE Andres-MacBook-Pro.local
+			--- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ /error}: error(HttpServletRequest)
+	{ /error, produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2019-03-27 14:31:16.903 DEBUG Andres-MacBook-Pro.local
+			--- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 20 mappings in 'requestMappingHandlerMapping'
+2019-03-27 14:31:16.992  INFO Andres-MacBook-Pro.local
+			--- [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-03-27 14:31:17.059 TRACE Andres-MacBook-Pro.local
+			--- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped [/**/favicon.ico] onto ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []]
+2019-03-27 14:31:17.059 DEBUG Andres-MacBook-Pro.local
+			--- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-03-27 14:31:17.186  INFO Andres-MacBook-Pro.local
+			--- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-27 14:31:17.217 DEBUG Andres-MacBook-Pro.local
+			--- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-03-27 14:31:17.248 DEBUG Andres-MacBook-Pro.local
+			--- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Detected 0 mappings in 'beanNameHandlerMapping'
+2019-03-27 14:31:17.255 TRACE Andres-MacBook-Pro.local
+			--- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped [/webjars/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2019-03-27 14:31:17.256 TRACE Andres-MacBook-Pro.local
+			--- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped [/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-03-27 14:31:17.256 DEBUG Andres-MacBook-Pro.local
+			--- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-03-27 14:31:17.270 DEBUG Andres-MacBook-Pro.local
+			--- [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-03-27 14:31:17.435  INFO Andres-MacBook-Pro.local
+			--- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-03-27 14:31:17.457  INFO Andres-MacBook-Pro.local
+			--- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-03-27 14:31:17.491  INFO Andres-MacBook-Pro.local
+			--- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-03-27 14:31:17.757  INFO Andres-MacBook-Pro.local
+			--- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2019-03-27 14:31:17.782  INFO Andres-MacBook-Pro.local
+			--- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2019-03-27 14:31:17.787  INFO Andres-MacBook-Pro.local
+			--- [           main] c.c.j.SpringemsApplication               : Started SpringemsApplication in 4.962 seconds (JVM running for 5.791)
+2019-03-27 14:34:27.421  INFO Andres-MacBook-Pro.local
+			--- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-03-27 14:34:27.422  INFO Andres-MacBook-Pro.local
+			--- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2019-03-27 14:34:27.422 TRACE Andres-MacBook-Pro.local
+			--- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Detected org.springframework.web.multipart.support.StandardServletMultipartResolver@178c4480
+2019-03-27 14:34:27.424 TRACE Andres-MacBook-Pro.local
+			--- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : No LocaleResolver 'localeResolver': using default [AcceptHeaderLocaleResolver]
+2019-03-27 14:34:27.425 TRACE Andres-MacBook-Pro.local
+			--- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : No ThemeResolver 'themeResolver': using default [FixedThemeResolver]
+2019-03-27 14:34:27.428 TRACE Andres-MacBook-Pro.local
+			--- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : No RequestToViewNameTranslator 'viewNameTranslator': using default [DefaultRequestToViewNameTranslator]
+2019-03-27 14:34:27.430 TRACE Andres-MacBook-Pro.local
+			--- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : No FlashMapManager 'flashMapManager': using default [SessionFlashMapManager]
+2019-03-27 14:34:27.431 DEBUG Andres-MacBook-Pro.local
+			--- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2019-03-27 14:34:27.431  INFO Andres-MacBook-Pro.local
+			--- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 9 ms
+2019-03-27 14:34:27.438 TRACE Andres-MacBook-Pro.local
+			--- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : GET "/employees", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2019-03-27 14:34:27.443 TRACE Andres-MacBook-Pro.local
+			--- [nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<?> com.collabera.jump.controller.EmsController.getAllEmployees()
+2019-03-27 14:34:27.448 TRACE Andres-MacBook-Pro.local
+			--- [nio-8080-exec-1] .w.s.m.m.a.ServletInvocableHandlerMethod : Arguments: []
+2019-03-27 14:34:27.492  INFO Andres-MacBook-Pro.local
+			--- [nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-03-27 14:34:27.686 DEBUG Andres-MacBook-Pro.local
+			--- [nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json]
+2019-03-27 14:34:27.692 TRACE Andres-MacBook-Pro.local
+			--- [nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[(*)EmployeeId = 9 <===> Name = Andre, Age = 2019-03-25 20:00:00.0, Gender = FEMALE, ContactNo = 1234567890,
+                        Address = 12 Blah Rd, NYC, NY, 12345,
+                        SSN = 123456789, eMail = andre@collabera.com, Job Title = CEO, Department = DEVELOPMENT, Salary = 50000.0, reportTo = 0, isManager = false]]
+2019-03-27 14:34:27.723 TRACE Andres-MacBook-Pro.local
+			--- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : No view rendering, null ModelAndView returned.
+2019-03-27 14:34:27.724 DEBUG Andres-MacBook-Pro.local
+			--- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed 200 OK, headers={masked}
+2019-03-27 14:34:52.993 TRACE Andres-MacBook-Pro.local
+			--- [nio-8080-exec-3] o.s.w.s.DispatcherServlet                : GET "/employee?empId=1", parameters={masked}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2019-03-27 14:34:52.995 TRACE Andres-MacBook-Pro.local
+			--- [nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<?> com.collabera.jump.controller.EmsController.getEmployee(int)
+2019-03-27 14:34:53.000 DEBUG Andres-MacBook-Pro.local
+			--- [nio-8080-exec-3] .w.s.m.m.a.ServletInvocableHandlerMethod : Could not resolve parameter [0] in public org.springframework.http.ResponseEntity<?> com.collabera.jump.controller.EmsController.getEmployee(int): Required int parameter 'id' is not present
+2019-03-27 14:34:53.001 DEBUG Andres-MacBook-Pro.local
+			--- [nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler public final org.springframework.http.ResponseEntity<com.collabera.jump.exception.ExceptionResponse> com.collabera.jump.controller.EmsExceptionHandler.handle(java.lang.Exception)
+2019-03-27 14:34:53.002 TRACE Andres-MacBook-Pro.local
+			--- [nio-8080-exec-3] .w.s.m.m.a.ServletInvocableHandlerMethod : Arguments: [org.springframework.web.bind.MissingServletRequestParameterException: Required int parameter 'id' is not present]
+2019-03-27 14:34:53.002 ERROR Andres-MacBook-Pro.local
+			--- [nio-8080-exec-3] c.c.j.c.EmsExceptionHandler              : Required int parameter 'id' is not present
+2019-03-27 14:34:53.004 DEBUG Andres-MacBook-Pro.local
+			--- [nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-03-27 14:34:53.004 TRACE Andres-MacBook-Pro.local
+			--- [nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.collabera.jump.exception.ExceptionResponse@2df525ef]
+2019-03-27 14:34:53.008 DEBUG Andres-MacBook-Pro.local
+			--- [nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required int parameter 'id' is not present]
+2019-03-27 14:34:53.008 TRACE Andres-MacBook-Pro.local
+			--- [nio-8080-exec-3] o.s.w.s.DispatcherServlet                : No view rendering, null ModelAndView returned.
+2019-03-27 14:34:53.009 DEBUG Andres-MacBook-Pro.local
+			--- [nio-8080-exec-3] o.s.w.s.DispatcherServlet                : Completed 400 BAD_REQUEST, headers={masked}
+2019-03-27 14:35:03.638 TRACE Andres-MacBook-Pro.local
+			--- [nio-8080-exec-5] o.s.w.s.DispatcherServlet                : GET "/employee?id=1", parameters={masked}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2019-03-27 14:35:03.639 TRACE Andres-MacBook-Pro.local
+			--- [nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<?> com.collabera.jump.controller.EmsController.getEmployee(int)
+2019-03-27 14:35:03.644 TRACE Andres-MacBook-Pro.local
+			--- [nio-8080-exec-5] .w.s.m.m.a.ServletInvocableHandlerMethod : Arguments: [1]
+2019-03-27 14:35:03.649 DEBUG Andres-MacBook-Pro.local
+			--- [nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json]
+2019-03-27 14:35:03.650 TRACE Andres-MacBook-Pro.local
+			--- [nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Employee does not exist."]
+2019-03-27 14:35:03.652 TRACE Andres-MacBook-Pro.local
+			--- [nio-8080-exec-5] o.s.w.s.DispatcherServlet                : No view rendering, null ModelAndView returned.
+2019-03-27 14:35:03.653 DEBUG Andres-MacBook-Pro.local
+			--- [nio-8080-exec-5] o.s.w.s.DispatcherServlet                : Completed 409 CONFLICT, headers={masked}
+2019-03-27 14:45:35.327  INFO Andres-MacBook-Pro.local
+			--- [n(39)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-03-27 14:45:35.331  INFO Andres-MacBook-Pro.local
+			--- [n(39)-127.0.0.1] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-03-27 14:45:35.333  INFO Andres-MacBook-Pro.local
+			--- [n(39)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-03-27 14:45:35.336  INFO Andres-MacBook-Pro.local
+			--- [n(39)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2019-03-27 14:45:35.342  INFO Andres-MacBook-Pro.local
+			--- [n(39)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2019-03-27 14:45:46.108  INFO Andres-MacBook-Pro.local
+			--- [           main] c.c.j.SpringemsApplication               : Starting SpringemsApplication on Andres-MacBook-Pro.local with PID 871 (/Users/amirsa/Documents/workspace-spring-tool-suite-4-4.1.1.RELEASE/springems2/target/classes started by amirsa in /Users/amirsa/Documents/workspace-spring-tool-suite-4-4.1.1.RELEASE/springems2)
+2019-03-27 14:45:46.122  INFO Andres-MacBook-Pro.local
+			--- [           main] c.c.j.SpringemsApplication               : No active profile set, falling back to default profiles: default
+2019-03-27 14:45:46.972  INFO Andres-MacBook-Pro.local
+			--- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-03-27 14:45:47.019  INFO Andres-MacBook-Pro.local
+			--- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42ms. Found 1 repository interfaces.
+2019-03-27 14:45:47.385  INFO Andres-MacBook-Pro.local
+			--- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5a3ad5e5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-27 14:45:47.652  INFO Andres-MacBook-Pro.local
+			--- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2019-03-27 14:45:47.664  INFO Andres-MacBook-Pro.local
+			--- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2019-03-27 14:45:47.675  INFO Andres-MacBook-Pro.local
+			--- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2019-03-27 14:45:47.675  INFO Andres-MacBook-Pro.local
+			--- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-03-27 14:45:47.681  INFO Andres-MacBook-Pro.local
+			--- [           main] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/amirsa/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-03-27 14:45:47.766  INFO Andres-MacBook-Pro.local
+			--- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2019-03-27 14:45:47.766 DEBUG Andres-MacBook-Pro.local
+			--- [           main] o.s.w.c.ContextLoader                    : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-03-27 14:45:47.766  INFO Andres-MacBook-Pro.local
+			--- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1610 ms
+2019-03-27 14:45:47.919  INFO Andres-MacBook-Pro.local
+			--- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2019-03-27 14:45:48.018  INFO Andres-MacBook-Pro.local
+			--- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2019-03-27 14:45:48.067  INFO Andres-MacBook-Pro.local
+			--- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-03-27 14:45:48.123  INFO Andres-MacBook-Pro.local
+			--- [           main] o.h.Version                              : HHH000412: Hibernate Core {5.3.7.Final}
+2019-03-27 14:45:48.124  INFO Andres-MacBook-Pro.local
+			--- [           main] o.h.c.Environment                        : HHH000206: hibernate.properties not found
+2019-03-27 14:45:48.225  INFO Andres-MacBook-Pro.local
+			--- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-03-27 14:45:48.336  INFO Andres-MacBook-Pro.local
+			--- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-03-27 14:45:49.007  INFO Andres-MacBook-Pro.local
+			--- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-03-27 14:45:49.536  WARN Andres-MacBook-Pro.local
+			--- [           main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-03-27 14:45:49.576 TRACE Andres-MacBook-Pro.local
+			--- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	c.c.j.c.EmsController:
+	{GET /employee, produces [application/json]}: getEmployee(int)
+	{POST /employee, consumes [application/json]}: createEmployee(Employee)
+	{DELETE /employee}: deleteEmployee(int)
+	{PUT /employee, consumes [application/json]}: updateEmployee(int,Employee)
+	{GET /employees, produces [application/json]}: getAllEmployees()
+	{GET /employees/name/{name}, produces [application/json]}: getEmployeesByName(String)
+	{GET /employees/gender/{gender}, produces [application/json]}: getEmployeesByGender(Gender)
+	{GET /employees/contactno/{contactNo}, produces [application/json]}: getEmployeesByContactNo(String)
+	{GET /employees/email/{email}, produces [application/json]}: getEmployeesByEmail(String)
+	{GET /employees/ssn/{ssn}, produces [application/json]}: getEmployeesBySsn(String)
+	{GET /employees/jobtitle/{jobTitle}, produces [application/json]}: getEmployeesByJobTitle(String)
+	{GET /employees/department/{department}, produces [application/json]}: getEmployeesByDepartment(Department)
+	{GET /employees/salary/{salary}, produces [application/json]}: getEmployeesBySalary(double)
+	{GET /employees/reportsto/{reportsTo}, produces [application/json]}: getEmployeesByReportsTo(int)
+	{GET /employees/ismanager/{isManager}, produces [application/json]}: getEmployeesByIsManager(boolean)
+2019-03-27 14:45:49.586 TRACE Andres-MacBook-Pro.local
+			--- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	s.d.s.w.ApiResourceController:
+	{ /swagger-resources/configuration/security}: securityConfiguration()
+	{ /swagger-resources/configuration/ui}: uiConfiguration()
+	{ /swagger-resources}: swaggerResources()
+2019-03-27 14:45:49.590 TRACE Andres-MacBook-Pro.local
+			--- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ /error}: error(HttpServletRequest)
+	{ /error, produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2019-03-27 14:45:49.595 DEBUG Andres-MacBook-Pro.local
+			--- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 20 mappings in 'requestMappingHandlerMapping'
+2019-03-27 14:45:49.663  INFO Andres-MacBook-Pro.local
+			--- [           main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-03-27 14:45:49.713 TRACE Andres-MacBook-Pro.local
+			--- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped [/**/favicon.ico] onto ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []]
+2019-03-27 14:45:49.713 DEBUG Andres-MacBook-Pro.local
+			--- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-03-27 14:45:49.793  INFO Andres-MacBook-Pro.local
+			--- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-27 14:45:49.814 DEBUG Andres-MacBook-Pro.local
+			--- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-03-27 14:45:49.834 DEBUG Andres-MacBook-Pro.local
+			--- [           main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Detected 0 mappings in 'beanNameHandlerMapping'
+2019-03-27 14:45:49.840 TRACE Andres-MacBook-Pro.local
+			--- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped [/webjars/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2019-03-27 14:45:49.840 TRACE Andres-MacBook-Pro.local
+			--- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped [/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-03-27 14:45:49.841 DEBUG Andres-MacBook-Pro.local
+			--- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-03-27 14:45:49.852 DEBUG Andres-MacBook-Pro.local
+			--- [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-03-27 14:45:49.961  INFO Andres-MacBook-Pro.local
+			--- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-03-27 14:45:49.972  INFO Andres-MacBook-Pro.local
+			--- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-03-27 14:45:50.004  INFO Andres-MacBook-Pro.local
+			--- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-03-27 14:45:50.151  INFO Andres-MacBook-Pro.local
+			--- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2019-03-27 14:45:50.166  INFO Andres-MacBook-Pro.local
+			--- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2019-03-27 14:45:50.169  INFO Andres-MacBook-Pro.local
+			--- [           main] c.c.j.SpringemsApplication               : Started SpringemsApplication in 4.326 seconds (JVM running for 5.331)
+2019-03-27 14:45:56.892  INFO Andres-MacBook-Pro.local
+			--- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-03-27 14:45:56.893  INFO Andres-MacBook-Pro.local
+			--- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2019-03-27 14:45:56.893 TRACE Andres-MacBook-Pro.local
+			--- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Detected org.springframework.web.multipart.support.StandardServletMultipartResolver@6a4238ff
+2019-03-27 14:45:56.894 TRACE Andres-MacBook-Pro.local
+			--- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : No LocaleResolver 'localeResolver': using default [AcceptHeaderLocaleResolver]
+2019-03-27 14:45:56.895 TRACE Andres-MacBook-Pro.local
+			--- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : No ThemeResolver 'themeResolver': using default [FixedThemeResolver]
+2019-03-27 14:45:56.898 TRACE Andres-MacBook-Pro.local
+			--- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : No RequestToViewNameTranslator 'viewNameTranslator': using default [DefaultRequestToViewNameTranslator]
+2019-03-27 14:45:56.901 TRACE Andres-MacBook-Pro.local
+			--- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : No FlashMapManager 'flashMapManager': using default [SessionFlashMapManager]
+2019-03-27 14:45:56.901 DEBUG Andres-MacBook-Pro.local
+			--- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2019-03-27 14:45:56.901  INFO Andres-MacBook-Pro.local
+			--- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 8 ms
+2019-03-27 14:45:56.911 TRACE Andres-MacBook-Pro.local
+			--- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : GET "/employees", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2019-03-27 14:45:56.916 TRACE Andres-MacBook-Pro.local
+			--- [nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<?> com.collabera.jump.controller.EmsController.getAllEmployees()
+2019-03-27 14:45:56.921 TRACE Andres-MacBook-Pro.local
+			--- [nio-8080-exec-1] .w.s.m.m.a.ServletInvocableHandlerMethod : Arguments: []
+2019-03-27 14:45:56.950  INFO Andres-MacBook-Pro.local
+			--- [nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-03-27 14:45:57.059 DEBUG Andres-MacBook-Pro.local
+			--- [nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json]
+2019-03-27 14:45:57.065 TRACE Andres-MacBook-Pro.local
+			--- [nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[(*)EmployeeId = 9 <===> Name = Andre, Age = 2019-03-25 20:00:00.0, Gender = FEMALE, ContactNo = 1234567890,
+                        Address = 12 Blah Rd, NYC, NY, 12345,
+                        SSN = 123456789, eMail = andre@collabera.com, Job Title = CEO, Department = DEVELOPMENT, Salary = 50000.0, reportTo = 0, isManager = false]]
+2019-03-27 14:45:57.106 TRACE Andres-MacBook-Pro.local
+			--- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : No view rendering, null ModelAndView returned.
+2019-03-27 14:45:57.108 DEBUG Andres-MacBook-Pro.local
+			--- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed 200 OK, headers={masked}
+2019-03-27 14:46:09.459 TRACE Andres-MacBook-Pro.local
+			--- [nio-8080-exec-3] o.s.w.s.DispatcherServlet                : GET "/employee?id=100", parameters={masked}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2019-03-27 14:46:09.460 TRACE Andres-MacBook-Pro.local
+			--- [nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<?> com.collabera.jump.controller.EmsController.getEmployee(int)
+2019-03-27 14:46:09.466 TRACE Andres-MacBook-Pro.local
+			--- [nio-8080-exec-3] .w.s.m.m.a.ServletInvocableHandlerMethod : Arguments: [100]
+2019-03-27 14:46:09.469 DEBUG Andres-MacBook-Pro.local
+			--- [nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json]
+2019-03-27 14:46:09.470 TRACE Andres-MacBook-Pro.local
+			--- [nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Employee does not exist."]
+2019-03-27 14:46:09.472 TRACE Andres-MacBook-Pro.local
+			--- [nio-8080-exec-3] o.s.w.s.DispatcherServlet                : No view rendering, null ModelAndView returned.
+2019-03-27 14:46:09.473 DEBUG Andres-MacBook-Pro.local
+			--- [nio-8080-exec-3] o.s.w.s.DispatcherServlet                : Completed 409 CONFLICT, headers={masked}
+2019-03-27 14:48:23.217  INFO Andres-MacBook-Pro.local
+			--- [n(15)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-03-27 14:48:23.220  INFO Andres-MacBook-Pro.local
+			--- [n(15)-127.0.0.1] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-03-27 14:48:23.222  INFO Andres-MacBook-Pro.local
+			--- [n(15)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-03-27 14:48:23.225  INFO Andres-MacBook-Pro.local
+			--- [n(15)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2019-03-27 14:48:23.231  INFO Andres-MacBook-Pro.local
+			--- [n(15)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
